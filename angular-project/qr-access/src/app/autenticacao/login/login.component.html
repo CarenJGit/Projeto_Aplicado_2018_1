@@ -1,0 +1,24 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+  
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+      <!-- <img src="../../assets/images/qr-code.png" id="icon" alt="User Icon" /> -->
+    </div>
+
+    <!-- Login Form -->
+    <form #formLogin="ngForm" (submit)="Login(formLogin)">
+      <input type="text" id="login" ngModel name="login" class="fadeIn second" placeholder="Login">
+      <input type="text" id="senha" ngModel name="senha" class="fadeIn third"  placeholder="Senha">
+      <input type="submit" class="fadeIn fourth" value="Entrar">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Esqueceu sua senha?</a>
+    </div>
+
+  </div>
+</div>
